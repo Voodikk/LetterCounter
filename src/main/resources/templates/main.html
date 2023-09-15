@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Main</title>
+</head>
+<body>
+<h1>Введите строку</h1>
+<h2>Строка должна состоять ТОЛЬКО из символов английского алфавита в нижнем регистре</h2>
+<form th:action="@{/main/result}" method="post">
+<label>
+    <input type="text" name="string" required>
+    <input type="submit" value="Рассчитать">
+</label>
+</form>
+</body>
+</html>
